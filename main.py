@@ -1,5 +1,8 @@
 import cv2
 from cvzone.HandTrackingModule import HandDetector
+import time
+
+time.sleep(2)
 
 cap = cv2.VideoCapture(0)
 detector = HandDetector(detectionCon=0.9, maxHands=2)
